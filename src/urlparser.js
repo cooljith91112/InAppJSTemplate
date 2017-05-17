@@ -7,4 +7,6 @@ define(['jquery'], function($) {
             return results[1] || 0;
         }
     }
+
+    return $;
 })

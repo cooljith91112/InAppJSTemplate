@@ -1,4 +1,9 @@
-// Main Config File
+webpackJsonp([0],{
+
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Main Config File
 
 // renderArea stores where the dynamic template should be loaded
 // module stores metadata about the modules. The structure should be similar to given below
@@ -7,7 +12,7 @@
 //      template:string, 'path to the template'
 //  }
 //  
-define([], function() {
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 
 
     var CONFIG = {
@@ -62,5 +67,11 @@ define([], function() {
     }
 
     return CONFIG;
+
+}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ })
 
 });

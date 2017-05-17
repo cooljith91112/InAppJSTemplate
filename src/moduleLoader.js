@@ -32,18 +32,18 @@ define(['nunjucks', 'config', 'jqueryui'], function(nunjucks, CONFIG) {
 
                     if (module.scripts.length > 0) {
                         if (module.main) {
-                            require.undef(module.main);
-                            require([module.main], function(module_obj) {
+                            // require.undef(module.main);
+                            require.ensure([module.main], function(module_obj) {
                                 console.log(module_obj)
                                 module_obj.init();
                             })
                         }
-                        require(module.scripts);
+                        require.ensure([module.scripts]);
                     }
 
                     if (CONFIG.common && !module.rejectcommon) {
-                        require.undef(CONFIG.common[0]);
-                        require(CONFIG.common, function(common) {
+                        // require.undef(CONFIG.common[0]);
+                        require.ensure(CONFIG.common, function(common) {
                             common.init();
                         });
                     }
